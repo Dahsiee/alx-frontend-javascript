@@ -30,12 +30,12 @@ const director1: Directors = {
 };
 
 console.log(director1);
-interface printTeacherFunction {
+interface function printTeacher {
   (firstName: string, lastName: string): string;
 }
 
 // Define the function interface
-interface printTeacherFunction {
+interface function printTeacher {
   (firstName: string, lastName: string): string;
 }
 
