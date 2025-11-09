@@ -38,3 +38,16 @@ interface printTeacherFunction {
 function printTeacher(firstName: string, lastName: string): string { const teacher = { firstName, lastName };
   return `${firstName}. ${lastName}`;
 }
+
+// Define the StudentClass
+class StudentClass {
+  constructor(public firstName: string, public lastName: string) {}
+
+  workOnHomework(): string {
+    return "Currently working";
+  }
+
+  displayName(): string {
+    return this.lastName + this.firstName; // Corrected to return lastName + firstName
+  }
+}
