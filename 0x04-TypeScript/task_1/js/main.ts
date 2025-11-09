@@ -7,7 +7,7 @@ interface Teacher {
   [key: string]: any;
 }
 
-interface Director extends Teacher {
+interface Directors extends Teacher {
   numberOfReports: number;
 }
 
@@ -21,7 +21,7 @@ const teacher3: Teacher = {
 
 console.log(teacher3);
 
-const director1: Director = {
+const director1: Directors = {
   firstName: 'John',
   lastName: 'Doe',
   location: 'London',
@@ -34,10 +34,15 @@ interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
+// Define the function interface
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
+
 // Implement the function using the interface
 const printTeacher: printTeacherFunction = (firstName, lastName) => {
   return `${firstName.charAt(0)}. ${lastName}`;
 };
+
+// Example usage
+console.log(printTeacher("John", "Doe")); // Output: J. Doe
