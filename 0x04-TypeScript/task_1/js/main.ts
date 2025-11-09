@@ -1,12 +1,10 @@
-// task_1/js/main.ts
-
 interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
   fullTimeEmployee: boolean;
   yearsOfExperience?: number;
   location: string;
-  [key: string]: any; // Allows additional properties
+  [key: string]: any;
 }
 
 interface Directors extends Teacher {
@@ -32,3 +30,6 @@ const director1: Directors = {
 };
 
 console.log(director1);
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
